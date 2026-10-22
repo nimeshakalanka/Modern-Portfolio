@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="dpAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#dpBg)" />
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="0" x2="80" y2="500" />
+    <line x1="240" y1="0" x2="240" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="560" y1="0" x2="560" y2="500" />
+    <line x1="720" y1="0" x2="720" y2="500" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+  </g>
+
+  <!-- Dashboard Window Container -->
+  <g transform="translate(60, 50)">
+    <!-- Window Frame -->
+    <rect width="680" height="400" rx="16" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+    
+    <!-- Title Bar -->
+    <rect width="680" height="44" rx="16" fill="#0F172A" />
+    <circle cx="28" cy="22" r="6" fill="#EF4444" />
+    <circle cx="48" cy="22" r="6" fill="#F59E0B" />
+    <circle cx="68" cy="22" r="6" fill="#10B981" />
+    <rect x="250" y="14" width="180" height="16" rx="8" fill="#334155" opacity="0.6" />
+
+    <!-- Sidebar Simulation -->
+    <rect x="16" y="60" width="130" height="324" rx="8" fill="#0F172A" opacity="0.5" />
+    <rect x="30" y="78" width="80" height="12" rx="4" fill="#6366F1" opacity="0.8" />
+    <rect x="30" y="104" width="100" height="8" rx="4" fill="#64748B" opacity="0.5" />
+    <rect x="30" y="124" width="90" height="8" rx="4" fill="#64748B" opacity="0.5" />
+    <rect x="30" y="144" width="70" height="8" rx="4" fill="#64748B" opacity="0.5" />
+
+    <!-- Stat Cards -->
+    <g transform="translate(160, 60)">
+      <rect width="160" height="80" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="16" y="30" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="600">SPRINT VELOCITY</text>
+      <text x="16" y="60" fill="#F8FAFC" font-family="sans-serif" font-size="22" font-weight="bold">+28.4%</text>
+
+      <rect x="175" width="160" height="80" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="191" y="30" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="600">AVG PR REVIEW</text>
+      <text x="191" y="60" fill="#38BDF8" font-family="sans-serif" font-size="22" font-weight="bold">1.4 hrs</text>
+
+      <rect x="350" width="150" height="80" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="366" y="30" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="600">TEST COVERAGE</text>
+      <text x="366" y="60" fill="#10B981" font-family="sans-serif" font-size="22" font-weight="bold">94.8%</text>
+    </g>
+
+    <!-- Chart Panel -->
+    <g transform="translate(160, 155)">
+      <rect width="500" height="229" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="20" y="32" fill="#E2E8F0" font-family="sans-serif" font-size="14" font-weight="bold">Code Frequency & Deployments</text>
+
+      <!-- Bar Graph -->
+      <g transform="translate(40, 180)">
+        <rect x="0" y="-40" width="22" height="40" rx="4" fill="#334155" />
+        <rect x="35" y="-80" width="22" height="80" rx="4" fill="#6366F1" />
+        <rect x="70" y="-60" width="22" height="60" rx="4" fill="#334155" />
+        <rect x="105" y="-110" width="22" height="110" rx="4" fill="#6366F1" />
+        <rect x="140" y="-95" width="22" height="95" rx="4" fill="#38BDF8" />
+        <rect x="175" y="-130" width="22" height="130" rx="4" fill="#6366F1" />
+        <rect x="210" y="-70" width="22" height="70" rx="4" fill="#334155" />
+        <rect x="245" y="-120" width="22" height="120" rx="4" fill="#818CF8" />
+        <rect x="280" y="-140" width="22" height="140" rx="4" fill="url(#dpAccent)" />
+        <rect x="315" y="-110" width="22" height="110" rx="4" fill="#6366F1" />
+        <rect x="350" y="-150" width="22" height="150" rx="4" fill="#38BDF8" />
+        <rect x="385" y="-90" width="22" height="90" rx="4" fill="#334155" />
+      </g>
+
+      <!-- Trend Wave Line -->
+      <path d="M 60 140 Q 140 70, 220 100 T 360 50 T 460 30" fill="none" stroke="#38BDF8" stroke-width="3" />
+      <circle cx="460" cy="30" r="5" fill="#38BDF8" />
+    </g>
+  </g>
+</svg>
