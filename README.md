@@ -9,19 +9,19 @@ A modern, production-quality personal portfolio website engineered with Next.js 
 
 ---
 
-## 📸 Interface Preview & Design Showcase
+## Interface Preview & Design Showcase
 
 ```
 +-----------------------------------------------------------------------------------+
-|  [⚡ Alex.dev]          Home    About    Projects    Contact     [🌓 Theme] [Hire Me]|
+|  [Alex.dev]           Home    About    Projects    Contact     [Theme]    [Hire Me]|
 +-----------------------------------------------------------------------------------+
 |                                                                                   |
-|    🟢 Available for Summer 2026 Internships & Roles                               |
+|    Available for Summer 2026 Internships & Roles                                 |
 |                                                                                   |
 |    Hi, I'm Alex Morgan                                        [  AVATAR CARD   ]  |
 |    Information Systems Undergraduate & Web Developer          [   Gradient     ]  |
 |                                                               [   Tech Visor   ]  |
-|    [ View Projects -> ]   [ ✉ Contact Me ]   [ 📄 Resume ]   [ 2026 Grad Pill ]  |
+|    [ View Projects -> ]   [ Contact Me ]     [ Resume ]      [ 2026 Grad Pill ]  |
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 |  FEATURED PROJECTS                                                    [View All]  |
@@ -33,37 +33,37 @@ A modern, production-quality personal portfolio website engineered with Next.js 
 
 ---
 
-## ✨ Key Features & Technical Highlights
+## Key Features & Technical Highlights
 
-### 1. 🌓 System-Aware Dark & Light Mode
+### 1. System-Aware Dark & Light Mode
 - Integrated via `components/ThemeProvider.tsx` and custom Tailwind tokens.
 - Persisted seamlessly to `localStorage`.
 - Zero hydration flicker (FOUC) and automatic `prefers-color-scheme` fallback.
 
-### 2. 📱 Fluid, Mobile-First Responsive Design
+### 2. Fluid, Mobile-First Responsive Design
 - Tested and verified at **360px** (compact mobile), **768px** (tablet), **1024px** (desktop), and **1440px+** (wide monitors).
 - Zero horizontal layout shift or overflow bugs (`overflow-x: hidden`).
 - 48px+ touch-friendly tap targets and fluid typography scales.
 
-### 3. 💼 Single Source of Truth Project Showcase (`/data/projects.ts`)
+### 3. Single Source of Truth Project Showcase (`/data/projects.ts`)
 - All projects, case studies, technologies, and images are driven strictly from a strongly-typed TypeScript data module.
 - Adding or modifying a project requires **zero component modifications**.
 - Includes tag-based category filtering (`All`, `Next.js`, `React`, `Full-Stack`, `Tools`) and real-time keyword search.
 - Interactive **Case Study Modal** with deep-dive technical highlights, architecture notes, and live external links.
 
-### 4. 📬 Fully Functional Contact Form (`/contact`)
+### 4. Fully Functional Contact Form (`/contact`)
 - Integrated with **Web3Forms** using `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`.
 - Comprehensive client-side validation for name, email regex, subject, and message length.
 - **Anti-Spam Honeypot Field (`botCheck`)**: traps automated spam bots without CAPTCHA friction.
 - Dynamic visual feedback: Idle → Submitting (spinner) → Success confirmation / Error alerts.
 - Built-in graceful fallback mode: allows local grading evaluation even before an external API key is configured.
 
-### 5. 🎓 Academic Timeline & Categorized Skills Matrix (`/about`)
+### 5. Academic Timeline & Categorized Skills Matrix (`/about`)
 - Academic timeline showcasing university degree, GPA, honors, and coursework highlights.
 - Categorized skills matrix (Frontend, Backend & DB, Tools & DevOps, UI/UX) with visual proficiency progress bars and practical role contexts.
 - Downloadable resume / CV button linking to an offline PDF.
 
-### 6. ♿ Accessibility & Search Engine Optimization (SEO)
+### 6. Accessibility & Search Engine Optimization (SEO)
 - 100% keyboard navigable with visible focus indicators (`:focus-visible`).
 - Accessible semantic landmarks (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`).
 - Screen-reader friendly with descriptive `aria-label`, `aria-expanded`, and ARIA live regions.
@@ -73,7 +73,7 @@ A modern, production-quality personal portfolio website engineered with Next.js 
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Technology | Rationale |
 |---|---|---|
@@ -86,7 +86,7 @@ A modern, production-quality personal portfolio website engineered with Next.js 
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```
 portfolio/
@@ -127,6 +127,7 @@ portfolio/
 │   ├── favicon.svg               # SVG lettermark favicon
 │   └── resume.pdf                # Downloadable CV PDF placeholder
 ├── .env.example                  # Environment variables template
+├── DESIGN.md                     # Step 1 Design Specification document
 ├── package.json
 ├── tailwind.config.ts
 └── tsconfig.json
@@ -134,7 +135,7 @@ portfolio/
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 ### Prerequisites
 - **Node.js**: v18.18.0 or newer (v20+ recommended)
@@ -171,7 +172,7 @@ portfolio/
 
 ---
 
-## 🚢 Production Deployment to Vercel
+## Production Deployment to Vercel
 
 The application is fully pre-configured for seamless deployment to **Vercel**:
 
@@ -204,7 +205,7 @@ The application is fully pre-configured for seamless deployment to **Vercel**:
 
 ---
 
-## 🧑‍💻 Customizing with Your Details
+## Customizing with Your Details
 
 To personalize this portfolio with your own identity, edit **only two files**:
 
@@ -220,5 +221,5 @@ To personalize this portfolio with your own identity, edit **only two files**:
 
 ---
 
-## 📄 License
+## License
 This project is open-source under the [MIT License](LICENSE).
