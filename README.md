@@ -9,12 +9,6 @@ A modern, production-quality personal portfolio website engineered with Next.js 
 
 ---
 
-## 🌐 Live Demo & Deployment
-- **Production Live URL:** `https://alexmorgan-portfolio.vercel.app` (Placeholder – Ready for your Vercel deployment)
-- **Repository:** `https://github.com/example-student/personal-portfolio`
-
----
-
 ## 📸 Interface Preview & Design Showcase
 
 ```
@@ -133,7 +127,6 @@ portfolio/
 │   ├── favicon.svg               # SVG lettermark favicon
 │   └── resume.pdf                # Downloadable CV PDF placeholder
 ├── .env.example                  # Environment variables template
-├── DESIGN.md                     # Step 1 Design Specification document
 ├── package.json
 ├── tailwind.config.ts
 └── tsconfig.json
